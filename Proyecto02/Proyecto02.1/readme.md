@@ -4,13 +4,15 @@
 
 Hemos realizado la recolección del equipo informático, siguiendo nuestra metodología. 
 
-Para ello hemos alejado a las personas no autorizadas de la escena. 
+Para ello alejamos a las personas no autorizadas de la escena. 
 
 Hemos fotografiado la escena.
 
 Anotaremos la hora de obtención de la máquina.
 
-Estamos trabajando sobre una máquina virtual en live. Mantendremos el equipo encendido y no lo apagaremos.
+Estamos trabajando sobre una máquina virtual en live. 
+
+Mantendremos el equipo encendido y no lo apagaremos.
 
 ## La Evidencia
 
