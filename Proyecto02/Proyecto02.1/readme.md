@@ -41,7 +41,12 @@ La máquina presenta un mensaje de reinicio, al cual hemos optado por selecciona
 ![Mensaje de Reinicio](https://github.com/PlacidoDiaz/AFI/assets/86500067/4de40f6a-c442-416d-befa-2bc342e466cf)
 
 ## Tipo de Evidencia
-Tras localizar la evidencia, se realizará un análisis del impacto que esta podría tener.
+Tras localizar la evidencia, realizamos un análisis del impacto que esta podría tener.
+
+1. **Potencial Amenaza de Malware o Script Malicioso:** La presencia de un archivo con una extensión mínima en una ubicación temporal es sospechosa y puede indicar la presencia de un script malicioso. La necesidad de reiniciar también sugiere cambios significativos en el sistema.
+
+2. **Riesgo de Pérdida de Datos:** El mensaje de error y la solicitud de reinicio podrían indicar un problema en el sistema que podría resultar en la pérdida de datos o la alteración del funcionamiento normal.
+
 
 ## Orden de Volatilidad
 
@@ -67,7 +72,7 @@ Se realizará un triaje utilizando la aplicación **WinAudit** con parámetros e
 
 ### Paso 3: Copia Completa del Disco con FTK Imager
 
-Reaplizamos un clonado completo del disco.
+Realizamos un clonado completo del disco.
 
 ![FTK Imager](https://github.com/PlacidoDiaz/AFI/assets/86500067/7b5b9592-ed27-4dbc-8852-b3e9fb1292c5)
 
