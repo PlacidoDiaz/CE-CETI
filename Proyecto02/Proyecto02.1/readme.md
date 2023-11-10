@@ -24,7 +24,7 @@ Hemos realizado un aislamiento de personas no autorizadas en la escena.
 Se ha documentado visualmente la escena mediante fotografías (en este caso no podemos colocar imagenes de la escena).
 
 ### Registro de la Hora
-Hemos obtenido la máquina el lunes, 6 de noviembre de 2023, 08:00.
+Hemos obtenido la máquina el viernes, 10 de noviembre de 2023, 08:00.
 
 ### Entorno de Trabajo
 Estamos operando en una máquina virtual en vivo, manteniendo el equipo encendido sin apagarlo.
@@ -82,6 +82,75 @@ Guardamos la copia en un disco duro limpio.
 
 
 ## Cadena de Custodia
+
+| **Número de Caso:** | 001 |
+|---|---|
+| **Fecha y Hora de Inicio:** | viernes, 10 de noviembre de 2023, 08:00 |
+| **Fecha y Hora de Finalización:** | viernes, 10 de noviembre de 2023, 12:00 |
+| **Ubicación:** | [Ubicación de la Investigación] |
+
+### Equipo de Investigación
+
+| **Investigador Principal:** | Plácido Díaz Garrido |
+|---|---|
+| **Asistentes:** | No hubo |
+
+### Descripción de la Evidencia
+
+- **Fecha y Hora de Obtención:** viernes, 10 de noviembre de 2023, 08:00
+- **Descripción de la Evidencia:** Archivo con mensaje de error en "Windows Script Host" y solicitud de reinicio.
+- **Ruta de la Evidencia:** "C:\Windows\Temp\HoVgcPUXNBk.vbs"
+- **Fotos de la Escena:**
+
+![Error de Windows Script Host](https://github.com/PlacidoDiaz/AFI/assets/86500067/89e7d6cb-0bce-4346-8bea-eece1b3ffe2f)
+
+### Procedimientos de Recolección
+
+1. **Aislamiento de la Escena:**
+   - Se aseguró la escena para prevenir acceso no autorizado.
+
+2. **Fotografía de la Escena:**
+   - Se tomaron fotografías detalladas de la escena.
+
+3. **Registro de la Hora:**
+   - Se registró la hora exacta de obtención de la evidencia.
+
+4. **Entorno de Trabajo:**
+   - La recolección se realizó en una máquina virtual en vivo.
+
+5. **Captura de Memoria Volátil:**
+   - Se utilizó RamCapture64 para capturar la memoria volátil.
+
+6. **Triaje con WinAudit:**
+   - Se realizó un triaje utilizando WinAudit con los parámetros específicos.
+
+7. **Copia Completa del Disco:**
+   - Se utilizó FTK Imager para realizar una copia completa del disco.
+
+### Almacenamiento de la Evidencia
+
+- **Dispositivo de Almacenamiento:** Samsung 870 QVO 1 TB SATA 2.5
+- **Ubicación de Almacenamiento:** Caja fuerte del laboratorio
+
+### Transferencias de Custodia
+
+1. **De la Escena al Laboratorio:**
+   - No se transfirió la evidencia del lugar de origen al laboratorio. Se trabajó sobre el equipo ya que este no podía ser transportado.
+
+2. **Entre Investigadores:**
+   - La evidencia fué tratada por un solo investigador.
+
+### Acceso a la Evidencia
+
+- **Registro de Acceso:** viernes, 10 de noviembre de 2023, 08:00
+
+### Firmas
+
+| **Investigador Principal:** | Plácido Díaz Garrido |
+|---|---|
+| **Firma:** | Firmado por Plácido |
+| **Fecha:** | 10/11/2023 |
+
 
 ## Almacenamiento
 Las evidencias se almacenarán en dispositivos seguros con demostrada seguridad, capaces de detectar intentos de acceso no autorizados.
