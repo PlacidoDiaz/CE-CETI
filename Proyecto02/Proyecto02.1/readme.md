@@ -89,7 +89,7 @@ Guardamos la copia en un disco duro limpio.
 |---|---|
 | **Fecha y Hora de Inicio:** | viernes, 10 de noviembre de 2023, 08:00 |
 | **Fecha y Hora de Finalización:** | viernes, 10 de noviembre de 2023, 12:00 |
-| **Ubicación:** | [Ubicación de la Investigación] |
+| **Ubicación:** | Departamento de IT |
 
 ### Equipo de Investigación
 
