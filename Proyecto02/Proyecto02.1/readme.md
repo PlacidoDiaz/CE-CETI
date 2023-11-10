@@ -1,5 +1,7 @@
 # Parte 1: Recolección y Almacenamiento de Evidencias
 
+![image](https://github.com/PlacidoDiaz/AFI/assets/86500067/8509a44b-0f56-4278-bef7-078e70ea8f49)
+
 ## Índice
 
 1. [**Introducción**](#introducción)
