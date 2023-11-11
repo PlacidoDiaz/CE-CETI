@@ -156,7 +156,14 @@ La cadena de custodia es esencial en investigaciones forenses para garantizar la
 
 
 ## Almacenamiento
-Las evidencias se almacenarán en dispositivos seguros con demostrada seguridad, capaces de detectar intentos de acceso no autorizados.
+### Dispositivo de Almacenamiento Utilizado
+Para garantizar la integridad y seguridad de la evidencia digital recopilada, hemos seleccionado un dispositivo de almacenamiento confiable: **Samsung 870 QVO 1 TB SATA 2.5**. Este dispositivo ofrece una capacidad suficiente para contener la información recopilada durante la investigación, y su formato SATA 2.5 garantiza compatibilidad con una amplia gama de sistemas.
+
+### Ubicación Segura: Caja Fuerte del Laboratorio
+La evidencia se almacena en una caja fuerte ubicada en nuestro laboratorio forense. La elección de una caja fuerte proporciona una capa adicional de seguridad física para proteger la integridad de la información recolectada. Este enfoque es crucial para evitar el acceso no autorizado y preservar la cadena de custodia.
+
+### Acceso a la Evidencia
+El acceso a la evidencia está estrictamente controlado y registrado. Solo el investigador principal, en este caso, Plácido Díaz Garrido, tiene acceso autorizado. Cada vez que se accede al dispositivo de almacenamiento, se registra la fecha y la hora correspondientes.
 
 ## Metodología Seguida
 Hemos seguido la norma APINAG4, que proporciona un marco sólido para investigaciones forenses informáticas. La metodología aborda diferentes aspectos, incluyendo el proceso de recolección en equipos informáticos, dispositivos móviles, orden de volatilidad, procedimientos de análisis, almacenamiento, herramientas y consideraciones legales.
