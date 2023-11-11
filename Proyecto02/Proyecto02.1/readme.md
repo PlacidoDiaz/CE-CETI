@@ -14,7 +14,7 @@
 8. [**Metodología Seguida**](#metodología-seguida)
 
 ## Introducción
-En este proyecto, abordaremos la recolección y almacenamiento de evidencias en un entorno informático, siguiendo una metodología específica.
+En la ciberseguridad, la recolección y almacenamiento de evidencias son esenciales para investigaciones forenses. Este proyecto sigue la metodología APINAG4, que permite la recolección hasta el almacenamiento seguro. Examinamos tipos de evidencia, el orden de volatilidad y la cadena de custodia, siendo una guía útil para profesionales y entusiastas de la seguridad informática.
 
 ## La Recolección
 Hemos llevado a cabo la recolección del equipo informático, implementando nuestra norma **APINAG4**. 
