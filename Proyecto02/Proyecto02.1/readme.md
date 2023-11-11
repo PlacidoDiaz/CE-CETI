@@ -84,6 +84,7 @@ Guardamos la copia en un disco duro limpio.
 
 
 ## Cadena de Custodia
+La cadena de custodia es esencial en investigaciones forenses para garantizar la integridad de las evidencias digitales. A continuación, se presenta un resumen de la cadena de custodia para el caso número 001, utilizando la metodología APINAG4.
 
 | **Número de Caso:** | 001 |
 |---|---|
