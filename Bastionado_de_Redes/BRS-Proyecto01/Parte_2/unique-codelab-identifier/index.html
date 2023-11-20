@@ -1,0 +1,93 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Proyecto 1: Bastionado del arranque del sistema</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid="Google Analytics ID"
+                  codelab-ga4id=""
+                  id="unique-codelab-identifier"
+                  title="Proyecto 1: Bastionado del arranque del sistema"
+                  environment="web"
+                  feedback-link="A link where users can go to provide feedback (e.g. the git repo)">
+    
+      <google-codelab-step label="Introducción" duration="0">
+        <p class="image-container"><img alt="debian" src="img\\dff070a3829c5092.png"></p>
+<p><strong>Última modificanción:</strong> 2023-10-25</p>
+<p><strong>¿Qué se explica en este documento?</strong></p>
+<p>En ente documento se muestra una guía en la que configuramos los parámetros necesarios en la BIOS para aportar seguridad al sistema. Ya que es muy sencillo manipular el arranque para conseguir acceso al dispositivo.</p>
+<p><strong>¿Sobre qué modelo se ha realizado la práctica?</strong></p>
+<p>Este trabajo corresponde con una instalación de Debian 12.2.0</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Ocultar menú de arranque" duration="2">
+        <p>Una vez dentro de la máquina deberemos editar el fichero <strong>/etc/default/grub</strong>. Para cambiar el tiempo de aparicion del gentor de arranque deberemos tocar el parámetro <strong>GRUB_TIMEOUT</strong></p>
+<p class="image-container"><img alt="GRUB" src="img\\a3c31f72c6c61f1e.JPG"></p>
+<p>Para guarda los cambios tendremos que colocar el comando <strong>update-grub</strong></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configurar una contraseña modificar el arranque" duration="2">
+        <p>Para poder colocar una contraseña en el gestor de arranque debemos cifrar primero la contraseña con <strong>sudo grub-mkpasswd-pbkdf2</strong>.</p>
+<p>Ahora accedereos a <strong>/etc/grub.d/40_custom</strong>, una vez aquí dentro colocaremos lo siguiente:</p>
+<pre><code>set superusers=&#34;nombre-usuario&#34;
+password_pbkdf2 nombre-usuario hash-password
+</code></pre>
+<p>Para guarda los cambios tendremos que colocar el comando <strong>update-grub</strong>.</p>
+<p>Al arrancar de nuevo nos pedirá el usuario y su contraseña.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Crear una copia de seguridad de la configuración del arranque" duration="1">
+        <p>Para realizar una realizar una copia de seguridad de la configuración del  grub2 hay que respaldar estos tres elementos:</p>
+<ul>
+<li>Archivo /etc/default/grub</li>
+<li>Directorio /etc/grub.d/</li>
+<li>Archivo /boot/grub/grub.cfg</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Otras opciones de seguridad diferentes" duration="3">
+        <p>Estas son otras formas de asegurar el arranque:</p>
+<ul>
+<li><strong>Utilizar Secure Boot:</strong> Esto ayuda a proteger el proceso de arranque y garantiza que solo el software firmado digitalmente por un fabricante de confianza se ejecute durante el arranque.</li>
+<li><strong>Restricción de arranque desde dispositivos externos:</strong> Restringir el arranque desde dispositivos externos como USB o CD/DVD. Esto previene posibles ataques que podrían comprometer GRUB a través de medios externos.</li>
+<li><strong>Configuración de permisos de archivos:</strong> Asegurar que los archivos de configuración relacionados con GRUB tengan los permisos adecuados. Restringe los permisos de lectura y escritura para los archivos de configuración de GRUB para evitar la manipulación no autorizada.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

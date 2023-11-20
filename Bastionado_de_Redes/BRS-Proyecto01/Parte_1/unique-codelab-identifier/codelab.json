@@ -1,0 +1,27 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2023-10-25T20:37:55+02:00",
+  "id": "unique-codelab-identifier",
+  "duration": 12,
+  "title": "Proyecto 1: Bastionado del arranque del sistema",
+  "summary": "Summary of your codelab that is human readable",
+  "source": "index.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown",
+    "internetcomputer"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "A link where users can go to provide feedback (e.g. the git repo)",
+  "ga": "Google Analytics ID",
+  "url": "unique-codelab-identifier"
+}
