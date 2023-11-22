@@ -42,7 +42,7 @@
 - **Herramienta Usada**: DNSdumpster.
 - **Proceso**: 
   
-  Se ha utilizado **DNSdumpster** para identificar los servidores DNS que utiliza "el pozo" y sus direcciones ip.
+  Se ha utilizado **DNSdumpster** para identificar los servidores DNS que se utilizan, sus direcciones ip y alguna información extra.
 
 <img src="img/raw/dnsdumpster-dns-mx.PNG">
 
@@ -67,9 +67,8 @@
 
 <img src="img/raw/spiderfoot-correos.PNG">
 
-- **Información relevante:** 
+- **Servidor de correo detectado:** 
 
-  Se ha detectado el servidor de correo:
   ``````
   elpozo.com -> elpozo-com.mail.protection
   ``````
@@ -78,13 +77,13 @@
 - **Herramienta Usada**: DNSdumpster.
 - **Proceso**: 
   
-  Se ha utilizado **DNSdumpster** para busca subdominios asociados al dominio principal. Esta página nos devuelve un fichero ".xlsx" con todos los subdominios de "elpozo.com".
+  Se ha utilizado **DNSdumpster** para busca subdominios asociados al dominio principal. Esta página nos devuelve un fichero ".xlsx" con todos los subdominios de de la empresa.
 
 <img src="img/raw/dnsdumpster-hosts.PNG">
 
 - **Información relevante:** 
 
- 
+  Aqui podemos encontrar tanto el HostName, sus ips, el propietario de cada subdominio y le tecnología utilizada en cada uno. 
 
 ## 5. Información Adicional
 - **Redes Sociales y Presencia Online**: 
@@ -98,9 +97,3 @@
 - **Información de Empleados**: 
 
     Al realizar una busqueda en linkedin podemos encontrar los puestos de algunos de sus trabajadores e información importante.
-
-## Justificación de la Relevancia
-- Cada pieza de información ofrece una visión de la infraestructura y operaciones de "El POZO".
-- Los servidores DNS y de correo pueden revelar vulnerabilidades potenciales o puntos de contacto clave.
-- Los subdominios pueden indicar diferentes áreas de la empresa.
-- La información Whois proporciona detalles legales y técnicos.
