@@ -10,48 +10,56 @@
 
 - **Información relevante:** 
 
-  Incluye datos de registro, direcciones IP, información del ISP y detalles del contacto administrativo.
-
-````
-  $ whois elpozo.com
-      Domain Name: ELPOZO.COM
-      Registry Domain ID: 1181800_DOMAIN_COM-VRSN
-      Registrar WHOIS Server: https://www.arsys.es/dominios/whois
-      Registrar URL: http://www.arsys.es
-      Updated Date: 2023-05-19T09:34:34Z
-      Creation Date: 1997-05-23T04:00:00Z
-      Registry Expiry Date: 2024-05-24T04:00:00Z
-      Registrar: Arsys Internet, S.L. dba NICLINE.COM
-      Registrar IANA ID: 379
-      Registrar Abuse Contact Email: abuse@nicline.com
-      Registrar Abuse Contact Phone: +34 941 620 100
-      Domain Status: ok https://icann.org/epp#ok
-      Name Server: SCEN15.ELPOZO.COM
-      Name Server: SCEN17.ELPOZO.COM
-      DNSSEC: unsigned
-   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
->>> Last update of whois database: 2023-11-22T10:39:21Z <<<
-
-````
+  Se han obtenido datos de registro:
+  ``````
+  Registry Domain ID: 1181800_DOMAIN_COM-VRSN
+  Registry Expiry Date: 2024-05-24T04:00:00Z
+  Updated Date: 2023-05-19T09:34:34Z
+  Creation Date: 1997-05-23T04:00:00Z
+  ``````
+  Utilizando **Whois Online**, podemos obtener la direcciones IP de la web:
+  ``````
+  195.57.134.66
+  ``````
+  Información del ISP;
+  ``````
+  Registrar URL: http://www.arsys.es
+  Registrar: Arsys Internet, S.L. dba NICLINE.COM
+  Registrar IANA ID: 379
+  ``````
+  Detalles del contacto administrativo:
+  ``````
+  Registrar Abuse Contact Email: abuse@nicline.com
+  Registrar Abuse Contact Phone: +34 941 620 100
+  ``````
+  Servidores DNS
+  ``````
+  Name Server: SCEN15.ELPOZO.COM
+  Name Server: SCEN17.ELPOZO.COM
+  ``````
 
 ## 2. Servidores DNS
 - **Herramienta Usada**: DNSdumpster.
 - **Proceso**: 
   
-  Se ha utilizado **DNSdumpster** para identificar los servidores DNS que utiliza "el pozo" .
+  Se ha utilizado **DNSdumpster** para identificar los servidores DNS que utiliza "el pozo" y sus direcciones ip.
 
 <img src="img/raw/dnsdumpster-dns-mx.PNG">
 
 - **Información relevante:** 
 
+  ``````
+  scen15.elpozo.com -> 195.57.134.74
+
+  scen17.elpozo.com -> 195.57.134.76
+  ``````
 
 
 ## 3. Servidores de Correo
-- **Herramienta Usada**: MXToolBox, DNSlytics, Email Verifier.
+- **Herramientas Usadas**: Dig, spiderfoot.
 - **Proceso**: 
-  - Importante para entender la infraestructura de comunicaciones de "El POZO".
 
-  Usando el comando **dig**, se ha investigado los registros MX para determinar los servidores de correo electrónico de la empresa. :
+  Usando el comando **dig**, se ha investigado los registros MX para determinar los servidores de correo electrónico de la empresa:
 
 <img src="img/raw/dig.PNG">
 
@@ -61,17 +69,22 @@
 
 - **Información relevante:** 
 
-
+  Se ha detectado el servidor de correo:
+  ``````
+  elpozo.com -> elpozo-com.mail.protection
+  ``````
 
 ## 4. Subdominios
 - **Herramienta Usada**: DNSdumpster.
 - **Proceso**: 
-  - Busca subdominios asociados al dominio principal.
-  - Revela aspectos adicionales de la infraestructura de la red y posibles puntos de entrada.
+  
+  Se ha utilizado **DNSdumpster** para busca subdominios asociados al dominio principal. Esta página nos devuelve un fichero ".xlsx" con todos los subdominios de "elpozo.com".
 
 <img src="img/raw/dnsdumpster-hosts.PNG">
 
+- **Información relevante:** 
 
+ 
 
 ## 5. Información Adicional
 - **Redes Sociales y Presencia Online**: 
