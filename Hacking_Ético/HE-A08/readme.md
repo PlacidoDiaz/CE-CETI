@@ -58,7 +58,7 @@ En este trabajo se muestra un análisis profundo de la empresa "El POZO", emplea
   
   Se ha utilizado **DNSdumpster** para identificar los servidores DNS que se utilizan, sus direcciones ip y alguna información extra.
 
-<img src="img/dnsdumpster-dns-mx.PNG">
+<img src="img/dnsdumpster-dns-mx.png">
 
 - **Información relevante:** 
 
@@ -75,7 +75,7 @@ En este trabajo se muestra un análisis profundo de la empresa "El POZO", emplea
 
   Usando el comando **dig**, se ha investigado los registros MX para determinar los servidores de correo electrónico de la empresa:
 
-<img src="img/dig.PNG">
+<img src="img/dig.png">
 
   Utilizando **spiderfoot**, podemos ver los correos de los trabajadores:
 
@@ -93,7 +93,7 @@ En este trabajo se muestra un análisis profundo de la empresa "El POZO", emplea
   
   Se ha utilizado **DNSdumpster** para busca subdominios asociados al dominio principal. Esta página nos devuelve un fichero ".xlsx" con todos los subdominios de de la empresa.
 
-<img src="img/dnsdumpster-hosts.PNG">
+<img src="img/dnsdumpster-hosts.png">
 
 - **Información relevante:** 
 
