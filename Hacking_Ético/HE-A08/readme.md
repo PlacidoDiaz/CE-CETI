@@ -1,6 +1,8 @@
-# Auditoría OSINT para "El POZO"
+# Mapa DNS de "El POZO"
 
 <img src="img/portada.png">
+
+Trabajo realizado por: Plácido Díaz Garrido
 
 # Índice
 
