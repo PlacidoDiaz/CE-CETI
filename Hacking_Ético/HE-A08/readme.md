@@ -1,12 +1,26 @@
 # Auditoría OSINT para "El POZO"
 
+<img src="img/portada.png">
+
+# Índice
+
+- [Introducción](#Introducción)
+- [1. Información Whois](#Información-Whois)
+- [2. Servidores DNS](#Servidores-DNS)
+- [3. Servidores de Correo](#Servidores-de-Correo)
+- [4. Subdominios](#Subdominios)
+- [5. Información Adicional](#Información-Adicional)
+
+## Introducción
+En este trabajo se muestra un análisis profundo de la empresa "El POZO", empleando diversas herramientas de seguridad informática. Se muestran la información obtenida y la forma. El método utilizado para la recopilación y análisis de datos se detalla, resaltando técnicas específicas de ciberseguridad.
+
 ## 1. Información Whois
 - **Herramienta Usada**: Whois.
 - **Proceso**: 
   
   Se ha realizado una consulta Whois para obtener información sobre el dominio de "El POZO".
   
-<img src="img/raw/whois.PNG">
+<img src="img/whois.PNG">
 
 - **Información relevante:** 
 
@@ -44,7 +58,7 @@
   
   Se ha utilizado **DNSdumpster** para identificar los servidores DNS que se utilizan, sus direcciones ip y alguna información extra.
 
-<img src="img/raw/dnsdumpster-dns-mx.PNG">
+<img src="img/dnsdumpster-dns-mx.PNG">
 
 - **Información relevante:** 
 
@@ -61,11 +75,11 @@
 
   Usando el comando **dig**, se ha investigado los registros MX para determinar los servidores de correo electrónico de la empresa:
 
-<img src="img/raw/dig.PNG">
+<img src="img/dig.PNG">
 
   Utilizando **spiderfoot**, podemos ver los correos de los trabajadores:
 
-<img src="img/raw/spiderfoot-correos.PNG">
+<img src="img/spiderfoot-correos.PNG">
 
 - **Servidor de correo detectado:** 
 
@@ -79,7 +93,7 @@
   
   Se ha utilizado **DNSdumpster** para busca subdominios asociados al dominio principal. Esta página nos devuelve un fichero ".xlsx" con todos los subdominios de de la empresa.
 
-<img src="img/raw/dnsdumpster-hosts.PNG">
+<img src="img/dnsdumpster-hosts.PNG">
 
 - **Información relevante:** 
 
@@ -96,4 +110,12 @@
 
 - **Información de Empleados**: 
 
-    Al realizar una busqueda en linkedin podemos encontrar los puestos de algunos de sus trabajadores e información importante.
+    Al realizar una busqueda en linkedin podemos encontrar los puestos de algunos de sus trabajadores e información importante. 
+
+<img src="img/raw/linkedin.PNG">
+
+
+- **Personas relevantes en la empresa**:
+  - [Laura Sánchez Acosta - RRHH](https://www.linkedin.com/in/laura-s%C3%A1nchez-acosta-2408/)
+  - [Jorge Luis Villalobos Pernalette - Responsable de ventas](https://www.linkedin.com/in/jorge-luis-villalobos-pernalette-880199ab/)
+  - [Jose Luis Suarez Acosta - Jefe de Ventas](https://www.linkedin.com/in/jose-luis-suarez-acosta-471164b1/)
