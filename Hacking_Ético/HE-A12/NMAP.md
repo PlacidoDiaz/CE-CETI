@@ -34,12 +34,12 @@ Ejecutando el comando `sudo nmap -sS 192.168.1.130` podremos ver los puertos y s
 ## d) Identificación de Versiones de Servicios
 Ejecutando el comando `sudo nmap -sV 192.168.1.130` podremos ver la version de los servicios.
 
-![Versiones](img/d.PNG)
+![Versiones](img/d.png)
 
 ## e) Usuarios con Contraseñas Vacías (NSE)
 Ejecutando el comando `sudo nmap --script auth 192.168.1.130` podremos ver los usuarios del sistema. Encontramos 2 usuarios: chewbacca y nobody.
 
-![Versiones1](img/e1.PNG)
+![Versiones1](img/e1.png)
 
 Ejecutando el comando `sudo nmap -p 21,22,80,445,631,3306,8080 --script ssh-auth-methods --script-args ssh.user=chewbacca 192.168.1.130` podremos ver si el usuario tiene contraseña ssh.
 - **--script ssh-auth-methods:** Utiliza un script de nmap para determinar los métodos de autenticación permitidos por un servidor SSH. Esto se utiliza para identificar cómo un servidor SSH está configurado en términos de autenticación.
@@ -48,7 +48,7 @@ Ejecutando el comando `sudo nmap -p 21,22,80,445,631,3306,8080 --script ssh-auth
 
 En la imagen se nos muestra que ambos usuarios se pueden identificar mediante una clave publica o una contraseña.
 
-![Versiones2](img/e2.PNG)
+![Versiones2](img/e2.png)
 
 ## f) Vulnerabilidades en el Equipo (NSE)
 Ejecutando el comando `sudo nmap -p 21,22,80,445,631,3306,8080 -sC -T4 192.168.1.130` podemos buscar vulnerabilidades en los puertos seleccionados.
